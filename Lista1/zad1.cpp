@@ -1,5 +1,3 @@
-// AiSD_Lista1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 int potega_rekurencyjna(int liczba, int potega)
@@ -26,8 +24,7 @@ int potega_nierekurencyjna(int liczba, int potega)
 
 int main()
 {
-    std::cout << "Hello World!\n";
     std::cout << potega_nierekurencyjna(3, 2) << std::endl;
-    std::cout << potega_rekurencyjna(3, 0) << std::endl;
+    std::cout << potega_rekurencyjna(3, 2) << std::endl;
 }
 
