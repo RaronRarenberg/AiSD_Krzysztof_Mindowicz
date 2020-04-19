@@ -1,19 +1,20 @@
 #include <iostream>
 #include <cmath>
 
-double oblicz(double a[], int n, double x)
+double oblicz(double wspolczynniki[], int stopien, double x)
 {
     double wynik = 0;
-    for (int i = n; i >= 0; i--)
+    for (int i = stopien - 1; i >= 0; i--)
     {
-        wynik = (wynik * x) + a[i];
+        wynik = (wynik * x) + wspolczynniki[i];
     }
     return wynik;
 }
 
 int main()
 {
-    double wspolczynniki[3] = {0, 0, 1 }; //    x^2 
+    const int stopien_wielomianu = 2;
+    double wspolczynniki[stopien_wielomianu + 1] = { 0, 0, 1 }; //    0*x^0 + 0*x^1 + 1*x^2 
     std::cout << oblicz(wspolczynniki, 3, 2) << std::endl;
 
     return 0;
