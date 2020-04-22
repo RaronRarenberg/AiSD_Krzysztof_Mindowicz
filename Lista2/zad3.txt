@@ -1,0 +1,5 @@
+a) n mnożeń
+b) (n * (n + 1)) / 2 standardowo oraz n mnożeń dla schematu Hornera
+c) n ^ 2 mnożeń
+d) n ^ 3 mnożeń
+e) n! mnożeń
