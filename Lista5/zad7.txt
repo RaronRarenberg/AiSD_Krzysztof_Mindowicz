@@ -1,0 +1,4 @@
+W przypadku Bucket Sort, 
+kiedy elementy są mocno "rozstrzelone" czyli różnice między nimi są zbyt duże,
+to stworzymy kubełki o szerokich przedziałach, przez co wiele elementów trafi do jednego kubełka, 
+co likwiduje użyteczność tego algorytmu i może doprowadzić do złożoności O(n^2)

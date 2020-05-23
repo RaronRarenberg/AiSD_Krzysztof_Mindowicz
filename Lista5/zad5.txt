@@ -1,0 +1,30 @@
+Stabilne algorytmy sortujące zostawiają posortowane wcześniej
+lub takie same względem rangi elementy zbioru w takiej kolejności 
+w jakiej były one w pierwotnym zbiorze.
+W przypadku sortowania talii kart według  wielkości dwójki kier,karo,pik i trefl
+powinny zostać w tej samej kolejności po sortowaniu co przed sortowaniem
+
+a) Insertion Sort - stabilny, 
+nie narusza kolejności posortowanych elementów
+
+b) Quick Sort - niestabilny, 
+chyba, że przed sortowaniem podzielimy elementy z pierwotnej listy na dwie listy, 
+gdzie jedna zawiera elementy mniejsze
+a druga większe od punktu "pivot" czyli punktu podziału, 
+ale i tak może nam się zdarzyć zamiana miejsc tych samych wartości
+
+c) Heap Sort - niestabilny, 
+w czasie tworzenia kopca informacja o pierwotnej kolejności elementów jest tracona
+
+d) Merge Sort - stabilny,
+przy łączeniu dwóch połówek wystarczy upewnić się, 
+że w przypadku równości element z lewej połówki trafia jako pierwszy do wychodzącego arrayu
+
+e) Counting Sort - stabilny,
+elementy posortowane wychodzą w tej samej kolejności co wchodziły
+
+f) Radix Sort - stabilny,
+jego częścią jest sortowanie zliczające z podpunktu e), które jest stabilne
+
+g) Bucket Sort - stabilny,
+chyba, że do posortowania elementów w kubełkach użyjemy niestabilnego algorytmu
