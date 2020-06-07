@@ -3,7 +3,7 @@
 struct Lista
 {
     int klucz;
-    Lista* nastepny = nullptr;
+    Lista* nastepny ;
 };
 
 void dodaj(Lista*& oryginalna, int kluczyk)
@@ -18,15 +18,14 @@ void reverse(Lista*& oryginalna)
 {
     if (oryginalna == nullptr || oryginalna->nastepny == nullptr) return;
     Lista* nastepna = nullptr;
-    Lista* poprzednia = nullptr; //to tak naprawde sluzy do zerowania tymczasowej
-    Lista* tymczasowa = oryginalna;
+    Lista* poprzednia = nullptr; 
 
-    while (tymczasowa != nullptr)//az do ostatniego wagonika
+    while (oryginalna != nullptr)//az do ostatniego wagonika
     {
-        nastepna = tymczasowa->nastepny;
-        tymczasowa->nastepny = poprzednia;
-        poprzednia = tymczasowa;
-        tymczasowa = nastepna;
+        nastepna = oryginalna->nastepny;
+        oryginalna->nastepny = poprzednia;
+        poprzednia = oryginalna;
+        oryginalna = nastepna;
     }
     oryginalna = poprzednia;
     std::cout << "obrocilem: ";
