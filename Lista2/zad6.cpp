@@ -28,24 +28,24 @@ void wypisz(Lista* lista)
 
 Lista* merge(Lista* l1, Lista* l2)  // różno-elementowe listy
 {
-	Lista* wynik = nullptr;
+    Lista* wynik = nullptr;
     if (l1 == nullptr) return l2;
     if (l2 == nullptr) return l1;
-    
 
-   
-	
-	if(l1->klucz <= l2->klucz)
-	{
-		wynik = l1; //do wynikowej listy wrzucamy wartosc z l1
-		wynik->nastepny = merge(l1->nastepny,l2); //i porównujemy kolejny element listy l1  z  tym samym elementem l2
-	}	
-	else
-	{
-		wynik = l2;
-		wynik->nastepny = merge(l1,l2->nastepny);
-	}
-	return(wynik);
+
+
+
+    if (l1->klucz <= l2->klucz)
+    {
+        wynik = l1; //do wynikowej listy wrzucamy wartosc z l1
+        wynik->nastepny = merge(l1->nastepny, l2); //i porównujemy kolejny element listy l1  z  tym samym elementem l2
+    }
+    else
+    {
+        wynik = l2;
+        wynik->nastepny = merge(l1, l2->nastepny);
+    }
+    return(wynik);
 }
 
 int main()

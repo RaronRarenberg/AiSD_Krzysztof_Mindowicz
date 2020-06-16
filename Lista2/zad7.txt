@@ -1,0 +1,5 @@
+Dodawanie co raz większych liczb do drzewa BST spowoduje,
+że będą się tworzyć wyłącznie prawe gałęzie,
+a to oznacza że po dodaniu n liczb mamy głębokość n.
+Utworzenie takiego drzewa n - elementowego kosztuje n * (n - 1) / 2 porównań
+A złożoność wynosi O(n^2)

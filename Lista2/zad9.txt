@@ -1,0 +1,6 @@
+Maksymalna liczba węzłów to 2^(h+1) - 1, ponieważ mamy
+2^1 węzłów na 1 poziomie, 2^2 na 2 poziomie itd.
+aż do poziomu h
+
+najmniejsza głębokość to ceil(log2(N)), gdzie N to liczba węzłów
+a najwięszka to po prostu N

@@ -1,0 +1,8 @@
+kiedy mamy tylko korzeń to drzewo składa się ze:
+-wskaźnika na korzeń
+-oraz dwóch wskaźników na jego potomków równych NULL
+czyli mamy 2/3 wskaźników na nullptr
+i jeżeli dodamy kolejny element do drzewa to :
+-zamieniamy nullptr na wskaźnik na ten element oraz
+-dwa wskaźniki na jego przyszłych potomków (nullptr)
+dlatego zawsze będziemy mieli więcej wskaźników równych NULL 
